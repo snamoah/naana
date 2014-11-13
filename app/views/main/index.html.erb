@@ -1,0 +1,4 @@
+<%= form_for "", url: {:controller => 'main', :action => 'find' }, method: 'post' do |f|  %>
+  <%= f.text_field :search_file, :placeholder => "Search File" %>
+  <%= f.submit "Go" %>
+<% end %>
