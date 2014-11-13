@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141111175027) do
+ActiveRecord::Schema.define(version: 20141113151642) do
 
   create_table "paths", force: true do |t|
-    t.string   "index"
+    t.string   "path"
     t.string   "file_name"
     t.datetime "created_at"
     t.datetime "updated_at"

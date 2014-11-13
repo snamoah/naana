@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
    post 'main/find' => "main#find"
 
+   get 'retrieve/:id' => "main#retrieve", :as => 'retrieve'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

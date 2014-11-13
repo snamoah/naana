@@ -1,7 +1,6 @@
-<audio controls autoplay>
-  <source src="<%= send_file @file.index %>">
-  Your browser does not support audio.
-</audio>
-
-<p><%= @file.index %></p>
+<%= audio_tag retrieve_path(@file), :controls => true, :autoplay => true %> 
+<p><%= @file.path %></p>
 <p><%= @file.file_name %></p>
+
+
+<p>Got here</p>

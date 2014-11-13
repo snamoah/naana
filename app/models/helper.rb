@@ -17,7 +17,7 @@ class Helper
           next
         end
       else
-        Path.create!(:index => path, :file_name => File.basename(path))
+        Path.create!(:path => path, :file_name => File.basename(path))
       end
     end
   end

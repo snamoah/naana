@@ -1,7 +1,9 @@
 class CreatePaths < ActiveRecord::Migration
   def change
+    drop_table :paths
+
     create_table :paths do |t|
-      t.string :index
+      t.string :path
       t.string :file_name
 
       t.timestamps
