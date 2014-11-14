@@ -1,3 +1,30 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background: #2c3e50;
+}
+
+
+.center {
+  float:none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.assistant {
+  margin-top: 30%;
+}
+
+.naana-search-file-field {
+  width: 100%;
+}
+
+.input-group {
+  margin-top: 50%;
+}
+
+.form-horizontal {
+  background: green;
+}

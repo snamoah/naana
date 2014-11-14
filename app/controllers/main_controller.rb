@@ -15,7 +15,7 @@ class MainController < ApplicationController
     end
   end
 
-  def retrieve
+  def retrieve_file
     @file = Path.find(params[:id])
     
 
@@ -24,4 +24,10 @@ class MainController < ApplicationController
     end
   end
 
+  def retrieve_index_photo
+  
+    File.open("#{Rails.root}/public/assets/images/assistant.png", 'rb') do |f|
+      send_data f.read, :disposition => 'inline'
+    end
+  end
 end
